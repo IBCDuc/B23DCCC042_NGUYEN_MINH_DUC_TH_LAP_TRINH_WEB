@@ -1,6 +1,7 @@
-import moment from 'moment';
-import _ from 'lodash';
-import { trim, removeHtmlTags, urlRegex } from '@/utils/utils';
+const moment = require('moment');
+const _ = require('lodash');
+const { trim, removeHtmlTags, urlRegex } = require('@/utils/utils');
+
 
 const allCharacters =
 	'a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂưăạảấầẩẫậắằẳẵặẹẻẽềềểỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹýếẾ';
@@ -323,4 +324,5 @@ const rules = {
 	],
 };
 
-export default rules;
+module.exports = rules; // CommonJS
+

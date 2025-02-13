@@ -32,8 +32,14 @@
 	},
 	{
 		path: '/random-user',
-		name: 'RandomUser',
+		name: 'RandomUsers',
 		component: './RandomUser',
+		icon: 'ArrowsAltOutlined',
+	},
+	{
+		path: '/todolist',
+		name: 'Todo List',
+		component: './TodoList',
 		icon: 'ArrowsAltOutlined',
 	},
 
